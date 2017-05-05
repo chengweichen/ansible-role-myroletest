@@ -15,9 +15,8 @@ install:
   #- printf '[defaults]\nroles_path=../' >ansible.cfg
 
 script:
-  # Basic role syntax check
-  - ansible-galaxy install test/requirements.yml
+  - ansible-galaxy install -r test/requirements.yml
   - ansible-playbook tests/test.yml -i tests/inventory --syntax-check
 
-#notifications:
-#  webhooks: https://galaxy.ansible.com/api/v1/notifications/
+notifications:
+  webhooks: https://galaxy.ansible.com/api/v1/notifications/
