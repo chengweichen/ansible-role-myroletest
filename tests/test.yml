@@ -2,4 +2,4 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - ubuntuphpfpm7
+    - myreloetest
