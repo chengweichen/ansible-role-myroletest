@@ -15,7 +15,7 @@ script:
   - pwd
   - ls
   - ls test/ 
-  - ansible-galaxy install -r $(pwd)/test/requirements.yml --roles-path=$(pwd)/test/roles/
+  - ansible-galaxy install -r $(pwd)/tests/requirements.yml --roles-path=$(pwd)/tests/roles/
   - ansible-playbook tests/test.yml -i tests/inventory --syntax-check
 
 notifications:
