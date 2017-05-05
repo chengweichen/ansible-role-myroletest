@@ -14,7 +14,6 @@ install:
 script:
   - pwd
   - ls
-  - ls test/ 
   - ansible-galaxy install -r $(pwd)/tests/requirements.yml --roles-path=$(pwd)/tests/roles/
   - ansible-playbook tests/test.yml -i tests/inventory --syntax-check
 
